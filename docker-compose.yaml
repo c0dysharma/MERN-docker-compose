@@ -12,7 +12,7 @@ services:
       - mongodb
 
   frontend:
-    build: c0dysharma/mern-frontend:latest
+    image: c0dysharma/mern-frontend:latest
     environment:
       - VITE_BACKEND_URL=http://localhost:5050
     ports:
