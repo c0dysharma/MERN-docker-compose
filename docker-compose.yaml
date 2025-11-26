@@ -1,6 +1,6 @@
 services:
   backend:
-    build: ./mern/backend
+    image: c0dysharma/mern-backend:latest
     environment:
       - MONGODB_URI=mongodb://mongodb:27017
       - DB_NAME=employees
@@ -12,7 +12,7 @@ services:
       - mongodb
 
   frontend:
-    build: ./mern/frontend
+    build: c0dysharma/mern-frontend:latest
     environment:
       - VITE_BACKEND_URL=http://localhost:5050
     ports:
