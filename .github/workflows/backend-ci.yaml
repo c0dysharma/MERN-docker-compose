@@ -50,4 +50,5 @@ jobs:
         with:
           context: ./mern/backend
           file: ./mern/backend/Dockerfile
+          push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/mern-backend:latest
