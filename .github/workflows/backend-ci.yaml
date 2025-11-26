@@ -72,6 +72,7 @@ jobs:
           key: ${{ secrets.SERVER_SSH_KEY }}
           source: "docker-compose.yaml"
           target: "~/deploy/"
+          overwrite: true
 
       # -----------------------------
       # SSH into server and run docker-compose
