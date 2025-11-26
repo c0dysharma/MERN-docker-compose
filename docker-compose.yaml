@@ -25,11 +25,7 @@ services:
     networks:
       - mern-server
     volumes:
-      - mongo-data:/data/db
-
-volumes:
-  mongo-data:
-    driver: local
+      - ~/deploy/mongo-data:/data/db
 
 networks:
   mern-server:
